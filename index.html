@@ -2,44 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>James Bond - Secret Agent</title>
+  <title>Secret Agent CV</title>
   <style>
-    /* Inline CSS styles */
+    /* Inline CSS */
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
+      margin: 20px;
     }
     .cv {
-      border: 2px solid #333;
-      border-radius: 10px;
+      border: 1px solid #ccc;
       padding: 20px;
-      margin: 20px auto;
-      max-width: 800px;
-      background-color: #f9f9f9;
-    }
-    .cv h1 {
-      text-align: center;
-    }
-    .section {
       margin-bottom: 20px;
     }
-    .section h2 {
-      color: #333;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
+    .cv h2 {
+      margin-top: 0;
     }
-    .description {
-      font-style: italic;
+    .section {
+      margin-bottom: 15px;
     }
-    .list-item {
-      margin-left: 20px;
-    }
-    .separator {
-      margin-top: 10px;
+    .section h3 {
       margin-bottom: 10px;
-      border-top: 1px solid #ccc;
     }
-    /* Add more styles as needed */
+    .section p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .work ul,
+    .education ul,
+    .missions ul,
+    .skills ul,
+    .languages ul {
+      margin-top: 0;
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
@@ -50,39 +45,84 @@
 
     <!-- Profile section -->
     <div class="section">
-      <h2>Profile</h2>
-      <p class="description">Highly skilled secret agent with a license to kill. Bringing together outstanding combat and intelligence abilities with a charismatic and persuasive personality. A dedicated and adaptable professional committed to global security.</p>
+      <h3>Profile</h3>
+      <p>Highly skilled secret agent with a license to kill. Bringing together outstanding combat and intelligence abilities with a charismatic and persuasive personality. A dedicated and adaptable professional committed to global security.</p>
     </div>
 
-    <!-- Work experience section -->
-    <div class="section">
-      <h2>Work experience</h2>
-      <p><strong>Secret Agent</strong><br>MI6 Intelligence Agency, London</p>
-      <ul class="list-item">
-        <li>Covert intelligence operations for national security.</li>
-        <li>Infiltration from high-risk environments.</li>
-        <li>Utilization of advanced espionage techniques and gadgets.</li>
-        <li>Surveillance, analysis, and threat prevention.</li>
+    <!-- Work Experience -->
+    <div class="section work">
+      <h3>Work Experience</h3>
+      <ul>
+        <li><strong>Secret Agent</strong><br>
+          MI6 Intelligence Agency, London<br>
+          <ul>
+            <li>Covert intelligence operations for national security.</li>
+            <li>Infiltration from high-risk environments.</li>
+            <li>Utilization of advanced espionage techniques and gadgets.</li>
+            <li>Surveillance, analysis, and threat prevention.</li>
+          </ul>
+        </li>
       </ul>
     </div>
 
-    <!-- Education section -->
-    <div class="section">
-      <h2>Education</h2>
-      <p><strong>Intelligence Academy</strong><br>MI6 Training Facility, London</p>
-      <p><strong>Courses and Achievements:</strong></p>
-      <ul class="list-item">
-        <li>Mastered advanced techniques for discreetly gathering intelligence and conducting covert operations.</li>
-        <li>Trained extensively in planning and executing covert operations and infiltrating high-security areas.</li>
-        <!-- Add more education details -->
+    <!-- Education -->
+    <div class="section education">
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Intelligence Academy</strong><br>
+          MI6 Training Facility, London<br>
+          <p>Courses and Achievements:</p>
+          <ul>
+            <li>Mastered advanced techniques for discreetly gathering intelligence and conducting covert operations.</li>
+            <li>Trained extensively in planning and executing covert operations and infiltrating high-security areas.</li>
+            <li>Received rigorous combat training in martial arts, firearms handling, and tactical skills.</li>
+            <li>Proficient in surveillance methods, counter-surveillance techniques, and analyzing gathered intelligence.</li>
+          </ul>
+        </li>
       </ul>
     </div>
 
-    <!-- Other sections: Missions, Contact, Skills, Languages, etc. -->
-    <!-- Add similar HTML structures for other sections -->
+    <!-- Missions -->
+    <div class="section missions">
+      <h3>Missions</h3>
+      <ul>
+        <li><strong>Die Another Day</strong><br>
+          Uncovered a North Korean general's plan to use a satellite weapon to create a war between North and South Korea.
+        </li>
+        <!-- Other missions -->
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="section contact">
+      <h3>Contact</h3>
+      <p><strong>Email:</strong> <a href="mailto:james.bond@mi6.gov">james.bond@mi6.gov</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+442071234567">+44 207 123 4567</a></p>
+      <p><strong>Address:</strong> MI6 Headquarters, London, United Kingdom</p>
+      <p><strong>Website:</strong> <a href="https://www.mi6.gov.uk">www.mi6.gov.uk</a></p>
+    </div>
+
+    <!-- Skills -->
+    <div class="section skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>Espionage Techniques</li>
+        <li>Surveillance</li>
+        <!-- Other skills -->
+      </ul>
+    </div>
+
+    <!-- Languages -->
+    <div class="section languages">
+      <h3>Languages</h3>
+      <ul>
+        <li>English - Fluent</li>
+        <li>French - Intermediate</li>
+        <!-- Other languages -->
+      </ul>
+    </div>
 
   </div>
 
 </body>
 </html>
-
