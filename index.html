@@ -2,127 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Secret Agent CV</title>
+  <title>James Bond's Resume</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Inline CSS */
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    .cv {
-      border: 1px solid #ccc;
+      background-color: #f5f5f5;
       padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 20px;
+    }
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px 5px 0 0;
       margin-bottom: 20px;
     }
-    .cv h2 {
-      margin-top: 0;
+    .cv-section {
+      margin-bottom: 20px;
     }
-    .section {
-      margin-bottom: 15px;
-    }
-    .section h3 {
+    .cv-item {
       margin-bottom: 10px;
     }
-    .section p {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-    .work ul,
-    .education ul,
-    .missions ul,
-    .skills ul,
-    .languages ul {
-      margin-top: 0;
-      padding-left: 20px;
+    .cv-item:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
 <body>
-
-  <div class="cv">
-    <h1>James Bond</h1>
-    <h2>Secret Agent</h2>
-
-    <!-- Profile section -->
-    <div class="section">
-      <h3>Profile</h3>
-      <p>Highly skilled secret agent with a license to kill. Bringing together outstanding combat and intelligence abilities with a charismatic and persuasive personality. A dedicated and adaptable professional committed to global security.</p>
-    </div>
-
-    <!-- Work Experience -->
-    <div class="section work">
-      <h3>Work Experience</h3>
-      <ul>
-        <li><strong>Secret Agent</strong><br>
-          MI6 Intelligence Agency, London<br>
-          <ul>
-            <li>Covert intelligence operations for national security.</li>
-            <li>Infiltration from high-risk environments.</li>
-            <li>Utilization of advanced espionage techniques and gadgets.</li>
-            <li>Surveillance, analysis, and threat prevention.</li>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="mb-0">James Bond</h2>
+        <p>Secret Agent</p>
+      </div>
+      <div class="card-body">
+        <div class="cv-section">
+          <h4 class="mb-3">Profile</h4>
+          <p>Highly skilled secret agent with a license to kill. Bringing together outstanding combat and intelligence abilities with a charismatic and persuasive personality. A dedicated and adaptable professional committed to global security.</p>
+        </div>
+        
+        <div class="cv-section">
+          <h4 class="mb-3">Work experience</h4>
+          <ul class="cv-item">
+            <li>Secret Agent - MI6 Intelligence Agency, London</li>
+            <ul>
+              <li>Covert intelligence operations for national security.</li>
+              <li>Infiltration from high-risk environments.</li>
+              <li>Utilization of advanced espionage techniques and gadgets.</li>
+              <li>Surveillance, analysis, and threat prevention.</li>
+            </ul>
           </ul>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Education -->
-    <div class="section education">
-      <h3>Education</h3>
-      <ul>
-        <li><strong>Intelligence Academy</strong><br>
-          MI6 Training Facility, London<br>
-          <p>Courses and Achievements:</p>
-          <ul>
-            <li>Mastered advanced techniques for discreetly gathering intelligence and conducting covert operations.</li>
-            <li>Trained extensively in planning and executing covert operations and infiltrating high-security areas.</li>
-            <li>Received rigorous combat training in martial arts, firearms handling, and tactical skills.</li>
-            <li>Proficient in surveillance methods, counter-surveillance techniques, and analyzing gathered intelligence.</li>
+        </div>
+        
+        <!-- Other sections like Education, Missions, Contact, Skills, Languages can be similarly structured -->
+        
+        <div class="cv-section">
+          <h4 class="mb-3">Contact</h4>
+          <ul class="cv-item">
+            <li><strong>Email:</strong> <a href="mailto:james.bond@mi6.gov">james.bond@mi6.gov</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+442071234567">+44 207 123 4567</a></li>
+            <li><strong>Address:</strong> MI6 Headquarters, London, United Kingdom</li>
+            <li><strong>Website:</strong> <a href="https://www.mi6.gov.uk">www.mi6.gov.uk</a></li>
           </ul>
-        </li>
-      </ul>
+        </div>
+        
+        <!-- Other sections can be added similarly -->
+        
+      </div>
+      <div class="card-footer">
+        <p class="text-muted">
+          I agree to the processing of personal data provided in this document for realizing the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)
+        </p>
+      </div>
     </div>
-
-    <!-- Missions -->
-    <div class="section missions">
-      <h3>Missions</h3>
-      <ul>
-        <li><strong>Die Another Day</strong><br>
-          Uncovered a North Korean general's plan to use a satellite weapon to create a war between North and South Korea.
-        </li>
-        <!-- Other missions -->
-      </ul>
-    </div>
-
-    <!-- Contact -->
-    <div class="section contact">
-      <h3>Contact</h3>
-      <p><strong>Email:</strong> <a href="mailto:james.bond@mi6.gov">james.bond@mi6.gov</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+442071234567">+44 207 123 4567</a></p>
-      <p><strong>Address:</strong> MI6 Headquarters, London, United Kingdom</p>
-      <p><strong>Website:</strong> <a href="https://www.mi6.gov.uk">www.mi6.gov.uk</a></p>
-    </div>
-
-    <!-- Skills -->
-    <div class="section skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>Espionage Techniques</li>
-        <li>Surveillance</li>
-        <!-- Other skills -->
-      </ul>
-    </div>
-
-    <!-- Languages -->
-    <div class="section languages">
-      <h3>Languages</h3>
-      <ul>
-        <li>English - Fluent</li>
-        <li>French - Intermediate</li>
-        <!-- Other languages -->
-      </ul>
-    </div>
-
   </div>
-
 </body>
 </html>
